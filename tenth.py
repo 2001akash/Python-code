@@ -1,0 +1,22 @@
+from tkinter import *
+root = Tk()
+root.geometry("300x300")
+f = Frame(root, bg="red", highlightbackground="grey", highlightthickness=5, padx=200, pady=50)
+f.grid(row=0,column=0)
+bf = Frame(root, bg="blue", highlightbackground="grey", highlightthickness=5, padx=200, pady=50)
+bf.grid(row=0,column=1)
+lf = Frame(root, bg="green", highlightbackground="grey", highlightthickness=5, padx=200, pady=50)
+lf.grid(row=1,column=0)
+rf = Frame(root, bg="yellow", highlightbackground="grey", highlightthickness=5, padx=200, pady=50)
+rf.grid(row=1,column=1)
+
+redbutton=Button(f, text="Red", fg="red")
+redbutton.pack(side=LEFT)
+bluebutton=Button(bf, text="blue", fg="blue")
+bluebutton.pack(side=LEFT)
+pinkbutton=Button(lf, text="green", fg="green")
+pinkbutton.pack(side=LEFT)
+blackbutton=Button(rf, text="yellow", fg="yellow")
+blackbutton.pack(side=LEFT)
+
+root.mainloop()
